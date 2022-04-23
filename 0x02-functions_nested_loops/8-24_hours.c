@@ -1,89 +1,30 @@
 #include "main.h"
 
 /**
- *  jack_bauer - Entry Point
- *  Return:0
+ * jack_bauer - printf every second of the day in 00:00 format
+ *
+ * Return: there is no return just print to the console.
  */
+
 void jack_bauer(void)
 {
-	int h1;
-	int h2;
-	int m1;
-	int m2;
-	int a = 9;
+int i, j, h1, h2, m1, m2;
 
-	h2 = 0;
-	while (h2 <= 2)
-	{
-		if (h2 == 2)
-		{
-			a = 3;
-		}
-		h1 = 0;
-		while (h1 <= a)
-		{
-			m2 = 0;
-			while (m2 <= 5)
-			{
-				m1 = 0;
-				while (m1 <= 9)
-				{
-					_putchar('0' + h2);
-					_putchar('0' + h1);
-					_putchar(':');
-					_putchar('0' + m2);
-					_putchar('0' + m1);
-					_putchar('\n');
-					m1++;
-				}
-				m2++;
-			}
-			h1++;
-		}
-		h2++;
-	}
-#include "main.h"
-
-/**
- *  jack_bauer - Entry Point
- *  Return:0
- */
-void jack_bauer(void)
+for (i = 0; i < 24; ++i)
 {
-	int h1;
-	int h2;
-	int m1;
-	int m2;
-	int a = 9;
+for (j = 0; j < 60; ++j)
+{
+h1 = i / 10 + '0';
+h2 = i % 10 + '0';
+m1 = j / 10 + '0';
+m2 = j % 10 + '0';
+_putchar(h1);
+_putchar(h2);
+_putchar(':');
+_putchar(m1);
+_putchar(m2);
+_putchar('\n');
+}
+}
 
-	h2 = 0;
-	while (h2 <= 2)
-	{
-		if (h2 == 2)
-		{
-			a = 3;
-		}
-		h1 = 0;
-		while (h1 <= a)
-		{
-			m2 = 0;
-			while (m2 <= 5)
-			{
-				m1 = 0;
-				while (m1 <= 9)
-				{
-					_putchar('0' + h2);
-					_putchar('0' + h1);
-					_putchar(':');
-					_putchar('0' + m2);
-					_putchar('0' + m1);
-					_putchar('\n');
-					m1++;
-				}
-				m2++;
-			}
-			h1++;
-		}
-		h2++;
-	}
-}}
+}
