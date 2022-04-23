@@ -1,18 +1,24 @@
-#include "main.h"
+# include "main.h"
+
 /**
- *  main - Entry Point
- *  Return:0(Successful)
+ *main - print out main car by char.
+ *Description: uses the main header file
+ *that contains the function _putchar
+ *Return: 0.
  */
+
 int main(void)
 {
-	char letter[] = "_putchar";
-	int i = 0;
+char str[] = "_putchar";
+int i;
 
-	while (i < 8)
-	{
-		_putchar(letter[i]);
-		i++;
-	}
-	_putchar('\n');
-	return (0);
+i = 0;
+while (str[i])
+{
+_putchar(str[i]);
+++i;
+}
+_putchar('\n');
+
+return (0);
 }
