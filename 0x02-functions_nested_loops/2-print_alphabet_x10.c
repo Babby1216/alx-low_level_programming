@@ -1,45 +1,23 @@
 #include "main.h"
 
 /**
- *  print_alphabet_x10 - Entry Point
- *  Return:0
+ * print_alphabet_x10 - prints the alphabet 10 times.
+ * Description: uses 2 for loops to pring a to z
+ * 10 times.
+ * Return: void.
  */
+
 void print_alphabet_x10(void)
 {
-	int i = 0;
+char ch;
+int num;
 
-	while (i < 10)
-	{
-		int alp = 0;
-
-		while (alp < 26)
-		{
-			_putchar(alp + 97);
-			alp++;
-		}
-		i++;
-		_putchar('\n');
-	}
-#include "main.h"
-
-/**
- *  print_alphabet_x10 - Entry Point
- *  Return:0
- */
-void print_alphabet_x10(void)
+for (num = 0; num < 10; ++num)
 {
-	int i = 0;
-
-	while (i < 10)
-	{
-		int alp = 0;
-
-		while (alp < 26)
-		{
-			_putchar(alp + 97);
-			alp++;
-		}
-		i++;
-		_putchar('\n');
-	}
-}}
+for (ch = 'a'; ch <= 'z'; ++ch)
+{
+_putchar(ch);
+}
+_putchar('\n');
+}
+}
