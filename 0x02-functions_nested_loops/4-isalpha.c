@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * _isalpha - Entry Point
- * @c : character to check
- * Return: 0 or 1
+ * _isalpha - checks to see if an int is a letter.
+ * @c: is the int to be checked if a lower or upper case letter.
  *
+ * Description: takes an in as input and checks if lower or upper.
+ * Return: returns 1 if letter and 0 if not.
  */
+
 int _isalpha(int c)
 {
-	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
-	{
-		return (1);
-	}
-	else
-		return (0);
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+return (1);
+else
+return (0);
 }
